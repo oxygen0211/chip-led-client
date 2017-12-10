@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'chip-led-client',
-  packages = ['chip-led-client'], # this must be the same as the name above
+  packages = ['client'], # this must be the same as the name above
   version = '0.1',
   description = 'Client library for chip LED controller (see https://github.com/oxygen0211/chip-led-controller)',
   author = 'Julian Engelhardt',
