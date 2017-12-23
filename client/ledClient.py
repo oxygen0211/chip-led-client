@@ -2,9 +2,10 @@ import requests
 import json
 
 class LEDStrip:
-    def __init__(self, host, port):
+    def __init__(self, name, host, port):
         self.host = host
         self.port = port
+        self.name = name
 
     def setColor(self, red, green, blue):
         url = self.getUrl()
@@ -28,6 +29,9 @@ class LEDStrip:
 
         response = requests.post(url, json=data)
         return response.status_code == 200
-
+    
     def getUrl(self):
         return 'http://{}:{}'.format(self.host, self.port)
+    
+    def getName(self);
+        return self.name
