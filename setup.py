@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
-  name = 'chip-led-client',
+  name = 'chipledclient',
   packages = ['client'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.2',
   description = 'Client library for chip LED controller (see https://github.com/oxygen0211/chip-led-controller)',
   author = 'Julian Engelhardt',
   author_email = 'jengelhardt211@gmail.com',
