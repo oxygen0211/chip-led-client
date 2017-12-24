@@ -29,9 +29,9 @@ class LEDStrip:
 
         response = requests.post(url, json=data)
         return response.status_code == 200
-    
+
     def getUrl(self):
         return 'http://{}:{}'.format(self.host, self.port)
-    
-    def getName(self);
+
+    def getName(self):
         return self.name
